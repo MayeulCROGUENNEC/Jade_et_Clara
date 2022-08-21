@@ -2,19 +2,11 @@
     font-family: Syne;
     src: url(../font/syrine_typo_de_base/otf/Syne-Regular.otf);
 }
-
 @font-face {
     font-family: Doppelganger;
     src: url(../font/gros_titres_doppelganger/Doppelganger_Display.otf);
 }
-
-
-
-
-
-body {background: #EEEBE7;}
-
-body {
+body {background: #fafdfc !important;
     margin: 0;
     font-family: "Syne";
 }
@@ -22,29 +14,29 @@ body {
 a {
     color: #FFFFFF;
     font-family: "Syne";
-    font-size: 22px;
 }
 
 
-/* _______________________________________body_____________________________________________________________________________ */
+/* _______________________________________Mobil_____________________________________________________________________________ */
+
 
 .firsttitle {
     color: #3B3939;
     font-size: 80px;
     font-family: Doppelganger;
     text-align: center;
-    padding-top: 160px;
+    padding-top: 100px;
 }
 .ccc {
     position: absolute;
     margin-top: 0px;}
 
 .traitg {
-    width: 267px;
+    width: 600px;
     height: 0px;
     border: 2px solid #707070;
     opacity: 1;
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
 .prez {
@@ -53,7 +45,7 @@ a {
 }
 .prezL {
     font-family: "Syne";
-    margin-left: 120px;
+    margin-left: 60px;
     font-size: 20px;
     color: #151515;
 }
@@ -100,12 +92,16 @@ a {
 .nextimg{
     width: 80%;
 }
+.traitg {
+    width: 250px;
+}
 
 
+/* _______________________________________Destop_____________________________________________________________________________ */
 
-@media (min-width: 48em) {
+@media (min-width: 1000px) {
     .firsttitle {
-        font-size: 280px;
+        font-size: 220px;
         padding-top: 110px;
     }
     .ccc {
@@ -159,7 +155,16 @@ a {
 
 }
 
+/* ______________________________________ Destop big_____________________________________________________________________________ */
 
+@media (min-width: 1600px) {
+    .firsttitle {
+        font-size: 280px;
+        padding-top: 110px;
+    }
+   
+    
+}
 
 
 

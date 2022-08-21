@@ -7,10 +7,11 @@
   font-family: Doppelganger;
   src: url(../font/gros_titres_doppelganger/Doppelganger_Display.otf);}
 
-
+  body {background: #fafdfc !important;}
 /* -----------------------------------------------------body________________________________________________________*/
 
-body {background: #EEEBE7 !important;}
+
+body {background: #fafdfc !important;}
 
 .galleriprez{
   padding-top: 15%;
@@ -165,4 +166,11 @@ img.hover-shadow {
 .previous:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* -----------------------------------------------------Gallerie________________________________________________________*/
+@media (max-width:767px) {
+.preview {
+  width: 150%;
+}
 }

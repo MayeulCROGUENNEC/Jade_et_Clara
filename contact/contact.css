@@ -7,76 +7,62 @@
     font-family: Doppelganger;
     src: url(../font/gros_titres_doppelganger/Doppelganger_Display.otf);}
 
-body {background: #EEEBE7 !important;}
+    body {background: #fafdfc !important;}
 
 
 /* _______________________________________blocintro_____________________________________________________________________________ */
 .blocintro{
     padding-top: 8%;
-    padding-left: 10%;
+    text-align: center;
+    justify-content: center;
+    padding: 06% 15% 0%;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.9fr 1.1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-    "text text images_1"
-    "lelogo lelogo lelogo"
-    "contactp1 contactp2 ImageDR"
-    "contactenbas contactenbas contactenbas";
+p{
+    font-size: 20px;
 }
 
-.text { grid-area: text; }
-
-.images_1 { grid-area: images_1; }
-
-.lelogo { grid-area: lelogo; }
-
-.contactp1 { grid-area: contactp1; }
-
-.contactp2 { grid-area: contactp2; }
-
-.ImageDR { grid-area: ImageDR; }
-
-.contactenbas { grid-area: contactenbas; }
-
-
-.textintro{
-    color: #3B3939;
-    font-family: Syne;
-    font-size: 45px;
-}
 .greytxt{
-  color: #000000;
-  font-size: 45px;
+    color: grey;
+    display: inline;
+    font-size: 25px;
 }
-.imagetop{
-    margin-left: 25%;
+.images_1{
+    margin-top: 5%;
 }
-.lelogo{margin-left: 45%; margin-top: -20%}
-
-
-.titlecontact{
-    text-decoration: underline;
-    font-size: 60px;
-    font-family: Syne;
+.lelogo {
+    margin-top: 05%;
+    float: left;
+    margin-left: 18%;
+    position:absolute;
 }
-.blablapluss {
-    font-size: 27px;
-    font-family: Syne;
-}
-.contactp1{margin-top: -480px;}
-.contactp2{margin-top: -390px;}
-.ImageDR{margin-top: -400px;}
 
 .contacttttt{
     font-size: 520px;
     font-family: Doppelganger;
-    margin-top: -800px;
+    margin-top: -400px;
+    position: absolute;
 }
+
 /* _______________________________________responsive 1er partie_____________________________________________________________________________ */
+@media (max-width:767px) {
+    .blocintro{
+        padding-top: 20%;
+    }
+    .lelogo {
+        margin-top: 05%;
+        float: left;
+        margin-left: 0%;
+        position:absolute;
+    }
+    .contacttttt {
+        font-size: 60px;
+        margin-top: 0px;
+        margin-left: 20%;
+    }
+    
+}
+/*
 @media (max-width:767px) {
     .blocintro {
         padding-top: 20%;
@@ -106,6 +92,7 @@ body {background: #EEEBE7 !important;}
         margin-top: -0px;
     }
     /* _______________________________________responsive 2ème partie_____________________________________________________________________________ */
+    /*
     .ImageDR {
         width: 120%;
         margin-top: 90px;
@@ -126,4 +113,4 @@ body {background: #EEEBE7 !important;}
         margin-left: 20%;
     }
 
-}
+} */
